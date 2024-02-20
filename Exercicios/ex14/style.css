@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{
+    background-image: linear-gradient(-45deg,rgb(79, 142, 214),rgb(115, 217, 235)); background-attachment: fixed; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#jorna{
+    color: white; font-weight: bold; background-color: rgb(2, 2, 99);text-align: center; text-decoration: none;}
+
+h2 {
+    color: rgb(2, 2, 167);
+}
+h1 {color: rgb(2, 2, 99); text-decoration: underline;}

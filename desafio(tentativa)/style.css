@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@font-face {
+    font-family: 'bac';
+    src: url('idroid.otf');
+}
+body{background-color: #84E1AD;}
+h1{font-family: 'Barlow Condensed', sans-serif;text-align: center; color: white; font-size: 42px;}
+header{background-image: linear-gradient(180deg,#3CD781,#1A5B37); height: 220px;margin: -21px -8px 0px -8px; padding-top: 11px;box-shadow: -9px 6px 20px 0px black;}
+p{text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white; margin-top: 35px; margin-bottom: 38px; }
+header > a{color: white; font-weight: bolder;font-family: 'Barlow Condensed', sans-serif; text-decoration: none;padding: 6px 30px;}
+header > a:hover{background-color: #247e4c; border-radius: 3px;}
+header > a:active{background-color: #31a766; border-radius: 3px;}
+main{background-color: white;margin-right:180px;margin-left: 180px;margin-top: -23px; min-width: 200px;padding-bottom: 2px;}
+main > h2{text-align: center;font-family: 'bac','Times New Roman',serif; color: #1A5B37;padding-left: 25px;padding-top: 30px;font-size: 28px;text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.459);}
+main > p{color: black;text-align: justify; padding: 0px 25px;margin-top: -6px; text-indent: 3em; font-family: 'Jost','Segoe UI', Tahoma, sans-serif;}
+main > p > a{color: #227949;font-weight: bolder;text-decoration: none;}
+main > p > a:hover{text-decoration: underline;}
+main > p > a:active{color: rgb(61, 207, 17);}
+main > h3{font-family: 'bac','Lucida Sans','Lucida Grande', 'Lucida Sans Unicode', sans-serif;padding-left: 8px;margin-left: 25px;margin-top: -12px;background-image: linear-gradient(90deg,#84E1AD,white);color: #246441;border-radius: 8px;}
+main > picture > img{margin-top: -40px;}
+#esp{text-indent: 0em;}
+#pse{margin-top: -20px; padding-left: 50px;margin-bottom: 15px;}
+#id{margin-top: -15px;margin-bottom: 20px;}
+mark{background-color: rgb(255, 255, 255);}
+section{background-color: #1a5b3700;}
+#uls{margin-left: 350px; margin-top: -144px; margin-bottom: 50px;}
+#ulss{margin-left: 50px;}
+#era{color: black;text-align: justify; padding: 0px 25px;margin-top: -6px; text-indent: 3em; font-family: 'Jost','Segoe UI', Tahoma, sans-serif;}
+h4{padding-left:30px ;padding-top: 15px;background-color:#3CD781;padding-bottom: 15px;color: white;font-weight: bolder;font-size: 1.5em; font-family: 'Jost','Segoe UI', sans-serif;border-radius: 9px 9px 0px 0px;}
+#eras{color: black;text-align: justify; padding: 0px 25px;margin-top: -16px; text-indent: 3em; font-family: 'Jost','Segoe UI', Tahoma, sans-serif;}
+aside{background-color: #3cd78275;border-radius: 9px;margin-left: 10px;margin-right: 10px;box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.664);margin-bottom: -10px;}
+footer{background-color: #1A5B37;margin-right: -8px;margin-left:-8px;padding-top: 1px; padding-bottom: 1px;}
+#poi{font-weight: bolder; font-size: 1.3em;}
+#qwe{color: #227949;font-weight: bolder;text-decoration: none;}
+#qwe:hover{text-decoration: underline;}
+#qwe:active{color: rgb(61, 207, 17);}
+abbr{text-decoration: none;}
+
