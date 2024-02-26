@@ -3,11 +3,10 @@
     font-family: passion;
     src: url(imagens/PassionOne-Bold.ttf);
 }
-.sriracha-regular {
-    font-family: "Sriracha", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
+@font-face {
+    font-family: Sriracha;
+    src: url(imagens/Sriracha-Regular.ttf);
+}
   
 *{
     margin: 0px;
