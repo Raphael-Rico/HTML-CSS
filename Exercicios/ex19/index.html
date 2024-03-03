@@ -3,149 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas maiores</title>
+    <title>Mesclando</title>
     <style>
-        :root{
-            --cor:rgba(151, 255, 148, 0.74)
-        }
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        h1{
+            text-align: center; 
+            text-decoration: overline;
+        }
         table{
+            width: 50vw;
+            height: 50vh;
             border-collapse: collapse;
-            width: 60vw;
             margin: auto;
-            box-shadow: 0px 2px 6px 0px black; 
-            position: relative;
+            margin-top: 70px;
         }
-        thead > tr > th{
-            position: sticky;
-            top: -1px;
-            background-color: rgb(7, 133, 85);
-        }
-        caption{
-            padding-bottom: 10px;
-            padding-top: 10px;
-            background-color:var(--cor);
-            border-radius: 5px 5px 0px 0px;
-            box-shadow: 0px -2px 6px 0px black;
-        }
-        thead{
-            background-color: rgba(7, 133, 84, 0.418);
-        }
-        tbody > tr:nth-child(2n){
-            background-color: var(--cor);
-        }
-        tfoot{
-            background-color: rgb(7, 133, 85);
-        }
-        th{
-            padding: 15px;
+        table > tbody > tr > td,th{
             border: 1px solid black;
-        }
-        td{
-            border: 1px solid black;
-            padding: 10px;
             text-align: center;
         }
-        .grut{
-            text-align: right;
+        .c1{
+            background-color: blueviolet;
         }
     </style>
 </head>
 <body>
+    <h1>Mesclagem de células</h1>
     <table>
-        <caption><strong>(População das unidades federativas brasileiras)</strong></caption>
-        <thead>
-            <th>Estado</th><th>População</th>
-        </thead>
+        <colgroup>
+            <col class="c1" span="2">
+            <col class="c3">
+            <col class="c4">
+        </colgroup>
         <tbody>
             <tr>
-                <td>São Paulo</td><td class="grut">44 411 238</td>
+                <td>1</td><td>2</td><td rowspan="2">3</td><td scope="col">4</td>
             </tr>
             <tr>
-                <td>Minas Gerais</td><td class="grut">20 538 718</td>
+                <td>5</td><td>6</td><td>7</td>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td><td class="grut">16 054 524</td>
+                <td colspan="3">8</td><td>9</td>
             </tr>
             <tr>
-                <td>Bahia</td><td class="grut">14 141 626</td>
+                <td rowspan="2">10</td><td colspan="2">11</td><td>12</td>
             </tr>
             <tr>
-                <td>Paraná</td><td class="grut">11 444 380</td>
-            </tr>
-            <tr>
-                <td>Rio Grande do Sul</td><td class="grut">10 693 929</td>
-            </tr>
-            <tr>
-                <td>Pernambuco</td><td class="grut">9 058 931</td>
-            </tr>
-            <tr>
-                <td>Ceará</td><td class="grut">8 794 957</td>
-            </tr>
-            <tr>
-                <td>Pará</td><td class="grut">8 121 025	</td>
-            </tr>
-            <tr>
-                <td>Santa Catarina</td><td class="grut">7 610 361</td>
-            </tr>
-            <tr>
-                <td>Goiás</td><td class="grut">7 056 495</td>
-            </tr>
-            <tr>
-                <td>Maranhão</td><td class="grut">6 775 805</td>
-            </tr>
-            <tr>
-                <td>Paraíba</td><td class="grut">3 974 687</td>
-            </tr>
-            <tr>
-                <td>Amazonas</td><td class="grut">3 941 613</td>
-            </tr>
-            <tr>
-                <td>Espírito Santo</td><td class="grut">3 833 712</td>
-            </tr>
-            <tr>
-                <td>Mato Grosso</td><td class="grut">3 658 649	</td>
-            </tr>
-            <tr>
-                <td>Rio Grande do Norte</td><td class="grut">3 302 729</td>
-            </tr>
-            <tr>
-                <td>Piauí</td><td class="grut">3 271 199</td>
-            </tr>
-            <tr>
-                <td>Alagoas</td><td class="grut">3 127 683	</td>
-            </tr>
-            <tr>
-                <td>Distrito Federal</td><td class="grut">2 817 381</td>
-            </tr>
-            <tr>
-                <td>Mato Grosso do Sul</td><td class="grut">2 757 013	</td>
-            </tr>
-            <tr>
-                <td>Sergipe</td><td class="grut">2 209 558</td>
-            </tr>
-            <tr>
-                <td>Rondônia</td><td class="grut">1 581 196</td>
-            </tr>
-            <tr>
-                <td>Tocantins</td><td class="grut">1 511 460</td>
-            </tr>
-            <tr>
-                <td>Acre</td><td class="grut">830 018</td>
-            </tr>
-            <tr>
-                <td>Amapá</td><td class="grut">733 759	</td>
-            </tr>
-            <tr>
-                <td>Roraíma</td><td class="grut">636 707</td>
+                <td>13</td><td>14</td><td>15</td>
             </tr>
         </tbody>
-        <tfoot>
-            <th>População Total</th>
-            <td><strong>214.300.000</strong></td>
-        </tfoot>
     </table>
 </body>
 </html>

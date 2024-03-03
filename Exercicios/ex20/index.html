@@ -3,45 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesclando</title>
+    <title>Tabelas</title>
     <style>
         body{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        h1{
-            text-align: center; 
-            text-decoration: overline;
+            position: relative;
+            height: 95vh;
         }
         table{
-            width: 50vw;
-            height: 50vh;
             border-collapse: collapse;
             margin: auto;
-            margin-top: 70px;
+            height: 40vh;
+            width: 40vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
         }
-        table > tbody > tr > td{
+        th,td{
             border: 1px solid black;
+            padding: 5px;
+        }
+        thead,tfoot{
+            background-color: rgba(28, 255, 236, 0.712);
+        }
+        .bac{
+            background-color: rgba(28, 255, 236, 0.712);
+        }
+        td{
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Mesclagem de células</h1>
     <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th><th rowspan="2" scope="col">Disciplinas</th><th colspan="2" scope="colgroup">Notas</th><th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Notas 1</th><th scope="col">Notas 2</th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
-                <td>A</td><td>B</td><td>C</td>
+                <th rowspan="4" scope="rowgroup">Exatas</th><td scope="row">Matemática</td><td>10</td><td>10</td><td>10</td>
             </tr>
             <tr>
-                <td>D</td><td>E</td><td>F</td>
+                <td scope="row">Física</td><td>10</td><td>10</td><td>10</td>
             </tr>
             <tr>
-                <td>G</td><td>H</td><td rowspan="2">L</td>
+                <td scope="row">Química</td><td>10</td><td>10</td><td>10</td>
             </tr>
             <tr>
-                <td>J</td><td>K</td>
+                <td scope="row">Biologia</td><td>10</td><td>10</td><td>10</td>
+            </tr>
+            <tr>
+               <th class="bac" colspan="4" scope="col">Média</th><td class="bac"><strong>10</strong></td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th><td scope="row">História</td><td>10</td><td>10</td><td>10</td>
+            </tr>
+            <tr>
+                <td scope="row">Geografia</td><td>10</td><td>10</td><td>10</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">Média de humanas</th><td><strong>10</strong></td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
