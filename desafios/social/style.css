@@ -1,0 +1,36 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url(pacote/pacote-d04/imagens/fundo-madeira.jpg);
+    background-size: 100% 100%;
+}
+#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(pacote/pacote-d04/imagens/frame-iphone.png);
+    height: 527px;
+    width: 244px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+iframe{
+    height: 397px;
+    width: 210px;
+    margin-top: 67px;
+    margin-left: 17px;
+}
+#ytb{
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
+}
+    
+
