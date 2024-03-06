@@ -3,6 +3,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: burlywood;
+}
 main{
     position: relative;
     height: 100vh;
