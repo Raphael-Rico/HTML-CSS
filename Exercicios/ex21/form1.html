@@ -18,9 +18,16 @@
 <body>
     <h1>Meu primeiro formulário</h1>
     <form method="post" action="cadastro.php">
-        <p><label for="itau">Nome:</label><input type="text" id="itau"> <br></p>
-        <p><label for="itai">Sobrenome:</label><input type="text" id="itai"></p>
+        <p><label for="itau">Nome:</label><input type="text" placeholder="Primeiro nome" id="itau"> <br></p>
+        <p><label for="itai">Sobrenome:</label><input placeholder="Último nome" type="text" id="itai"></p>
+         <label for="inumb">Nota:</label><input type="number" min="0"  max="15" step="0.1" placeholder="de 0 a 15" required name="numb" id="inumb"> <br> <br>
+         <label for="iMes">Mes de Início</label> <input type="month" required name="Mes" id="iMes"> <br><br>
+         <label for="idata">Data:</label><input type="date" required name="data" id="idata"><br> <br>
+         <label for="itempo">Tempo</label>input
+
+        <input type="reset" value="Limpar">
         <input type="submit" value="Send information">
+
     </form>
 </body>
 </html>
