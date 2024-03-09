@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+            text-decoration: overline;
+            color: brown;
+        }
+        div{
+            margin-bottom: 15px;
+        }
+        #botao{
+            margin-top: 15px;
+        }
+        fieldset{
+            color: green;
+            border: 2px dashed red;
+        }
+        legend{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sobre formulários</h1>
+    
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="itel">Telefone</label>
+                <input type="tel" required name="tel" id="itel">
+            </div>
+            <div>
+                <label for="iemail">E-mail</label>
+                <input type="email" required name="email" id="iemail">
+            </div>
+        </fieldset>
+        <div id="botao">
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
