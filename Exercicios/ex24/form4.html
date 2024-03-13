@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+            text-decoration: overline;
+            color: red;
+        }
+        div{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="#" method="post">
+        <div>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+                <optgroup label="Sudeste">
+                    <option value="">Minas Gerais</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Espírito Santo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option>Paraná</option>
+                    <option>Santa Catarina</option>
+                    <option>Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="idata">Profissão</label>
+            <input type="text" id="idata" list="ilist">
+            <datalist id="ilist">
+                <optgroup label="Saúde">
+                    <option>Médico</option>
+                    <option>Enfermeiro</option>
+                    <option>Anestesista</option>
+                </optgroup>
+                <optgroup label="Construção">
+                    <option>Arquiteto</option>
+                    <option>Engenheiro Civil</option>
+                    <option>Mestre de obras</option>
+                </optgroup>
+            </datalist>
+        </div>
+        <div>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

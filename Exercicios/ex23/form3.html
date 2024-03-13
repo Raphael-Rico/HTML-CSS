@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+            text-decoration: overline;
+            color: red;
+        }
+        #esp > fieldset > input{
+            margin-left: 3vw;
+        }
+        #bc > fieldset{
+            text-align: center;
+        }
+        #bc > fieldset > input{
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="#" method="get" autocomplete="on">
+        <div>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="Sxo" id="imas"><label for="imas">Masculino</label>
+                <input type="radio" name="Sxo" id="ifem"><label for="ifem">Feminino</label>
+            </fieldset>
+        </div>
+        <div id="esp">
+            <fieldset>
+                <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="esb" id="iesb"><label for="iesb">Basquete</label>
+                <input type="checkbox" name="esn" id="iesn"><label for="iesn">Natação</label>
+                <input type="checkbox" name="esm" id="iesm"><label for="iesm">Musculação</label>
+                <input type="checkbox" name="esc" id="iesc"><label for="iesc">Corrida</label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Escolha a cor</legend>
+                <input type="color" name="col" id="icol" value="#888888"> <label for="icol">Escolha cor</label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Quantidade</legend>
+                <input type="range" name="ran" id="iran" min="1" max="10" value="8"> <label for="iran">Pesquisa de satisfação</label>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Arquivos</legend>
+                <input type="file" name="fil" id="ifil">
+            </fieldset>
+        </div>
+        <div id="bc">
+            <fieldset>
+                <legend>Botões conclusivos</legend>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
