@@ -25,8 +25,8 @@ main{
 main > h1{
     text-align: center;
 }
-#phone{display: block;}
-#tablet{display: none;}
-#print{display: none;}
-#pc{display: none;}
-#tv{display: none;}
+#phone{display: block;margin: auto;}
+#tablet{display: none;margin: auto;}
+#print{display: none;margin: auto;}
+#pc{display: none;margin: auto;}
+#tv{display: none;margin: auto;}
