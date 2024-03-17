@@ -43,8 +43,13 @@ header > nav > ul > li{
 div{
     margin-bottom: 10px;
 }
-#burguer{
-
+#burguer:hover{
+    background-color: aliceblue;
+    transition: background-color 0.4s;
+}
+#burguer:active{
+    background-color: rgb(250, 250, 97);
+    transition: background-color 0.01s;
 }
 nav{
     display: none;
