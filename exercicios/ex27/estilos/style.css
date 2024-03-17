@@ -24,16 +24,17 @@ header > nav > ul{
 }
 header > nav > ul > li{
     border: 1px solid black;
-    text-indent: 1em;
 }
 li{
     padding: 4px 0px 4px 0px;
     background-color: #8C472E;
     border-radius: 0px 7px;
+    text-align: center;
 }
 li:hover{
     background-color: #BF6849;
     transition: background-color 0.3s;
+    cursor: pointer;
 }
 li:active{
     background-color: #ebc34e;
@@ -57,4 +58,12 @@ h2{
 main > p{
     text-align: justify;
     text-indent: 1.3em;
+}
+img{
+    width: 30px;
+    height: 30px;
+    display: none;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

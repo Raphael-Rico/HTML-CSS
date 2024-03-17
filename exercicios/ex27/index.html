@@ -11,15 +11,17 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
-            <ul type="none">
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
-            </ul>
-        </nav>
+        <div><a id="burguer" onclick="clickMenu()" href="#"><img src="estilos/216421_list_th_icon.svg" alt="menu"></a></div>
+            <nav id="ide">
+                <ul type="none">
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                </ul>
+            
+            </nav>
     </header>
     <main>
         <h2>Testando Media Queries</h2>
@@ -27,5 +29,14 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolores laudantium, optio quidem aliquam rerum, neque mollitia deleniti provident, totam perferendis magnam similique animi beatae. Quibusdam perferendis assumenda tenetur excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, corrupti obcaecati a assumenda aliquam, perspiciatis quia ipsum quos ut pariatur necessitatibus? Temporibus sit amet, dolore quasi possimus rerum! Id, qui!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ratione repudiandae aspernatur quae, vel hic dolore quidem id quod consectetur officiis sint aut, libero placeat odit iste, nobis alias fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi magni ut labore, officiis voluptate harum at quidem ipsum repellendus? Praesentium beatae, neque laboriosam quia in nobis porro ex quod ratione!</p>
     </main>
+    <script>
+        function clickMenu(){
+            if (ide.style.display == 'block'){
+                ide.style.display = 'none'
+            }else{
+                ide.style.display ='block'
+            }
+        }
+    </script>
 </body>
 </html>
