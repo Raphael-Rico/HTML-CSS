@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="estilos/style.css" media="screen and (min-width:573px)">
     <link rel="shortcut icon" href="estilos/2601811.png" type="image/x-icon">
 </head>
-<body>
+<body onresize="aumeNto()">
     <header>
         <h1>Meu Site</h1>
         <div id="burguer"><a onclick="clickMenu()" href="#"><img src="estilos/216421_list_th_icon.svg" alt="menu"></a></div>
             <nav id="ide">
-                <ul type="none">
+                <ul id="bul" type="none">
                     <li><a href="#">Opção 1</a></li>
                     <li><a href="#">Opção 2</a></li>
                     <li><a href="#">Opção 3</a></li>
@@ -30,6 +30,11 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ratione repudiandae aspernatur quae, vel hic dolore quidem id quod consectetur officiis sint aut, libero placeat odit iste, nobis alias fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi magni ut labore, officiis voluptate harum at quidem ipsum repellendus? Praesentium beatae, neque laboriosam quia in nobis porro ex quod ratione!</p>
     </main>
     <script>
+        function aumeNto(){
+            if (window.innerwidth >= 573){
+                bul.style.display = 'block'
+            }
+        }
         function clickMenu(){
             if (ide.style.display == 'block'){
                 ide.style.display = 'none'
