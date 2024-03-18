@@ -15,6 +15,7 @@ body{
     position: relative;
 }
 main{
+    transition: width 1s height 1s;
     position: absolute;
     top: 50%;
     left: 50%;
