@@ -1,1 +1,67 @@
 @charset "UTF-8";
+:root{
+    --corv:#49a09d;
+    --corl:#5f2c82;
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    position: relative;
+    background-color: var(--corl);
+}
+main{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 200px;
+    width: 70vw;
+    margin: auto;
+    height: 75vh;
+    min-height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+}
+#imagem{
+    background-image: url(pexels-vitor-lopes-13737660.jpg);
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+#form{
+    padding: 10px
+}
+#form > h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+#iemail,#ipass{
+    background-color: rgba(172, 255, 47, 0.473);
+    border-radius: 4px;
+}
+#pri {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#seg{
+    text-align: center;
+}
+.ent{
+    display: block;
+    margin: auto;
+    margin-top: 7px;
+    width: 50vw;
+    background-color: #98ccca;
+}
+.ent:hover{
+    cursor:pointer;
+}
