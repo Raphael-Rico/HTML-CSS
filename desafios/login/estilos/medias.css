@@ -36,6 +36,7 @@ main{
     display: inline-block;
     background-image: url(pexels-matthew-simmonds-1570404\ \(1\).jpg);
     background-size: cover;
+    background-color: #49a09d;
 }
 #form{
     padding-left: 20px;
