@@ -30,6 +30,7 @@ main{
     min-height: 250px;
 }
 #imagem{
+    transition: width 1s height 1s;
     width: 28vw;
     max-width: 320px;
     height:65vh;
@@ -40,6 +41,7 @@ main{
     background-color: #49a09d;
 }
 #form{
+    transition: width 1s height 1s;
     padding-left: 20px;
     display: inline-block;
     width: 40vw;
@@ -66,4 +68,12 @@ main{
 #iemail,#ipass{
     width: 19vw;
     max-width: 320px;
+}
+.ent{
+    background-color: #49a09da2;
+    padding: 5px;
+}
+.ent:hover{
+    background-color: aliceblue;
+    cursor: pointer;
 }

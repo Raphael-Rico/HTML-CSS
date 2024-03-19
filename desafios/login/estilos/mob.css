@@ -67,4 +67,5 @@ main{
 }
 .ent:hover{
     cursor:pointer;
+    background-color: aliceblue;
 }
